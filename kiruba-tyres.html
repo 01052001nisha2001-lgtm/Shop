@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiruba Tyres | Trusted Tyre Shop in Nalunnakkal, Kottayam</title>
+    <meta name="description" content="Kiruba Tyres - Quality tyres, tyre fitting, puncture repair, wheel balancing and tyre maintenance services in Nalunnakkal, Kottayam." />
+    <meta name="keywords" content="Tyre Shop Kottayam, Tyre Shop Nalunnakkal, Puncture Repair, Wheel Balancing, Kiruba Tyres" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --ink: #111318;
+            --tarmac: #1C1F26;
+            --steel: #2E333E;
+            --amber: #F5A623;
+            --amber-dark: #D48B10;
+            --smoke: #F2F3F5;
+            --muted: #6B7280;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: var(--ink);
+        }
+
+        .display {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+        }
+
+        .label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.75rem;
+        }
+
+        /* Tread pattern — the signature element */
+        .tread-bg {
+            position: relative;
+            overflow: hidden;
+        }
+        .tread-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 28px,
+                rgba(255,255,255,0.03) 28px,
+                rgba(255,255,255,0.03) 32px
+            ),
+            repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 12px,
+                rgba(255,255,255,0.02) 12px,
+                rgba(255,255,255,0.02) 14px
+            );
+            pointer-events: none;
+        }
+
+        .amber-line {
+            display: block;
+            width: 48px;
+            height: 4px;
+            background: var(--amber);
+            margin-bottom: 1.25rem;
+        }
+
+        .service-card {
+            border: 1.5px solid #E5E7EB;
+            border-radius: 0;
+            padding: 2rem;
+            position: relative;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .service-card:hover {
+            border-color: var(--amber);
+            box-shadow: 4px 4px 0 var(--amber);
+        }
+        .service-card .num {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-size: 3rem;
+            color: #E5E7EB;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-chip {
+            border: 2px solid var(--ink);
+            padding: 0.75rem 1.5rem;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            transition: background 0.15s, color 0.15s;
+        }
+        .brand-chip:hover {
+            background: var(--ink);
+            color: #fff;
+        }
+
+        .cta-btn-primary {
+            background: var(--amber);
+            color: var(--ink);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.875rem 2rem;
+            display: inline-block;
+            transition: background 0.15s;
+        }
+        .cta-btn-primary:hover { background: var(--amber-dark); }
+
+        .cta-btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.875rem 2rem;
+            display: inline-block;
+            transition: background 0.15s, color 0.15s;
+        }
+        .cta-btn-outline:hover { background: #fff; color: var(--ink); }
+
+        .stat-rule {
+            border-left: 4px solid var(--amber);
+            padding-left: 1.25rem;
+        }
+
+        nav a {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header style="background: var(--tarmac);" class="sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div>
+            <span class="display text-white text-2xl tracking-wide">Kiruba <span style="color: var(--amber)">Tyres</span></span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-gray-300">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#services" class="hover:text-white transition">Services</a>
+            <a href="#brands" class="hover:text-white transition">Brands</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </nav>
+        <a href="tel:+919995930484" class="cta-btn-primary text-sm">
+            Call Now
+        </a>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="tread-bg" style="background: var(--tarmac);">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="label" style="color: var(--amber);">Nalunnakkal · Kottayam</span>
+                <h1 class="display text-white mt-4 leading-none" style="font-size: clamp(3rem, 7vw, 5.5rem);">
+                    Quality Tyres.<br>
+                    <span style="color: var(--amber);">Reliable</span><br>
+                    Service.
+                </h1>
+                <p class="mt-6 text-gray-400 max-w-md leading-relaxed">
+                    Tyre sales, fitting, puncture repair, wheel balancing, and full tyre maintenance — all under one roof in Nalunnakkal.
+                </p>
+                <div class="flex flex-wrap gap-4 mt-10">
+                    <a href="tel:+919995930484" class="cta-btn-primary">
+                        +91 99959 30484
+                    </a>
+                    <a href="#contact" class="cta-btn-outline">
+                        Find Us
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div style="background: var(--amber); position: absolute; top: -12px; left: -12px; right: 12px; bottom: 12px; z-index: 0;"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1200&q=80"
+                    alt="Tyre Service at Kiruba Tyres"
+                    style="position: relative; z-index: 1; width: 100%; height: 460px; object-fit: cover;"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats bar -->
+<section style="background: var(--ink);">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="stat-rule">
+            <div class="display text-white text-3xl">7 Days</div>
+            <div class="label text-gray-400 mt-1">Open Weekly</div>
+        </div>
+        <div class="stat-rule">
+            <div class="display text-white text-3xl">8AM–8PM</div>
+            <div class="label text-gray-400 mt-1">Working Hours</div>
+        </div>
+        <div class="stat-rule">
+            <div class="display text-white text-3xl">Expert</div>
+            <div class="label text-gray-400 mt-1">Professional Service</div>
+        </div>
+        <div class="stat-rule">
+            <div class="display text-white text-3xl">Local</div>
+            <div class="label text-gray-400 mt-1">Customer Focused</div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-24" style="background: var(--smoke);">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div style="background: var(--amber); position: absolute; bottom: -12px; right: -12px; left: 12px; top: 12px; z-index: 0;"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+                    style="position: relative; z-index: 1; width: 100%; height: 420px; object-fit: cover;"
+                    alt="Kiruba Tyres Workshop"
+                />
+            </div>
+            <div>
+                <span class="label" style="color: var(--amber);">About Us</span>
+                <span class="amber-line mt-3"></span>
+                <h2 class="display text-4xl" style="color: var(--ink);">Your Local<br>Tyre Partner</h2>
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    We're committed to reliable tyre solutions and expert fitting services for drivers across Nalunnakkal and Kottayam. Whether it's a routine check or an emergency repair, our team keeps you moving.
+                </p>
+                <ul class="mt-6 space-y-3 text-gray-700">
+                    <li class="flex items-center gap-3">
+                        <span style="color: var(--amber); font-weight: 700;">✓</span> Quality Tyres
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span style="color: var(--amber); font-weight: 700;">✓</span> Fast Puncture Repair
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span style="color: var(--amber); font-weight: 700;">✓</span> Wheel Balancing
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span style="color: var(--amber); font-weight: 700;">✓</span> Friendly Service
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span style="color: var(--amber); font-weight: 700;">✓</span> Competitive Pricing
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-14">
+            <span class="label" style="color: var(--amber);">What We Do</span>
+            <span class="amber-line mt-3"></span>
+            <h2 class="display text-5xl" style="color: var(--ink);">Our Services</h2>
+            <p class="mt-4 text-gray-500 max-w-md">Complete tyre care under one roof.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-gray-200">
+            <div class="service-card border-b border-r">
+                <div class="num">01</div>
+                <h3 class="display text-2xl mb-2">Tyre Sales</h3>
+                <p class="text-gray-500">Quality tyres for all vehicle types, from two-wheelers to heavy vehicles.</p>
+            </div>
+            <div class="service-card border-b border-r">
+                <div class="num">02</div>
+                <h3 class="display text-2xl mb-2">Tyre Fitting</h3>
+                <p class="text-gray-500">Professional installation and replacement done right, every time.</p>
+            </div>
+            <div class="service-card border-b border-r">
+                <div class="num">03</div>
+                <h3 class="display text-2xl mb-2">Puncture Repair</h3>
+                <p class="text-gray-500">Quick and reliable repair so you're back on the road fast.</p>
+            </div>
+            <div class="service-card border-b border-r">
+                <div class="num">04</div>
+                <h3 class="display text-2xl mb-2">Wheel Balancing</h3>
+                <p class="text-gray-500">Extend tyre life and improve ride comfort with proper balancing.</p>
+            </div>
+            <div class="service-card border-b border-r">
+                <div class="num">05</div>
+                <h3 class="display text-2xl mb-2">Tyre Inspection</h3>
+                <p class="text-gray-500">Safety checks and maintenance advice to keep you road-ready.</p>
+            </div>
+            <div class="service-card border-b border-r">
+                <div class="num">06</div>
+                <h3 class="display text-2xl mb-2">Air Pressure Check</h3>
+                <p class="text-gray-500">Optimal pressure means better fuel efficiency and safety.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brands -->
+<section id="brands" style="background: var(--tarmac);" class="tread-bg py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="mb-12">
+            <span class="label" style="color: var(--amber);">Stock</span>
+            <span class="amber-line mt-3"></span>
+            <h2 class="display text-5xl text-white">Brands Available</h2>
+        </div>
+        <div class="flex flex-wrap gap-4">
+            <div class="brand-chip text-white" style="border-color: rgba(255,255,255,0.3);">MRF</div>
+            <div class="brand-chip text-white" style="border-color: rgba(255,255,255,0.3);">Apollo</div>
+            <div class="brand-chip text-white" style="border-color: rgba(255,255,255,0.3);">CEAT</div>
+            <div class="brand-chip text-white" style="border-color: rgba(255,255,255,0.3);">JK Tyre</div>
+            <div class="brand-chip text-white" style="border-color: rgba(255,255,255,0.3);">Bridgestone</div>
+        </div>
+        <p class="mt-8 text-gray-500 text-sm">Update with the brands you actually stock.</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section style="background: var(--amber);" class="py-20">
+    <div class="max-w-4xl mx-auto text-center px-6">
+        <span class="label" style="color: rgba(0,0,0,0.5);">Get In Touch</span>
+        <h2 class="display mt-3" style="font-size: clamp(2.5rem, 5vw, 4rem); color: var(--ink);">
+            Need Tyres or Repairs Today?
+        </h2>
+        <p class="mt-4 text-gray-800 text-lg">
+            Call us or drop by — we're open 7 days a week.
+        </p>
+        <a href="tel:+919995930484"
+           class="mt-8 inline-block px-10 py-4 display text-xl tracking-wide"
+           style="background: var(--ink); color: #fff;">
+            Call +91 99959 30484
+        </a>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="mb-12">
+            <span class="label" style="color: var(--amber);">Find Us</span>
+            <span class="amber-line mt-3"></span>
+            <h2 class="display text-5xl" style="color: var(--ink);">Contact</h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+                <div style="border-left: 4px solid var(--amber); padding-left: 1.5rem;" class="space-y-6">
+                    <div>
+                        <div class="label text-gray-400">Phone</div>
+                        <div class="display text-2xl mt-1">+91 99959 30484</div>
+                    </div>
+                    <div>
+                        <div class="label text-gray-400">Hours</div>
+                        <div class="display text-2xl mt-1">8:00 AM – 8:00 PM</div>
+                        <div class="text-gray-500 text-sm mt-1">Open all 7 days</div>
+                    </div>
+                    <div>
+                        <div class="label text-gray-400">Location</div>
+                        <div class="display text-2xl mt-1">Nalunnakkal</div>
+                        <div class="text-gray-500 text-sm mt-1">Kerala 686538</div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-4 mt-10">
+                    <a href="tel:+919995930484" class="cta-btn-primary">
+                        Call Us
+                    </a>
+                    <a href="https://wa.me/919995930484" target="_blank"
+                       class="cta-btn-primary" style="background: #25D366; color: #fff;">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            <iframe
+                class="w-full shadow-lg"
+                style="height: 400px; border: 0;"
+                src="https://maps.google.com/maps?q=9.482364,76.573872&z=15&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background: var(--ink);" class="py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <span class="display text-white text-xl">Kiruba <span style="color: var(--amber);">Tyres</span></span>
+        <p class="text-gray-500 text-sm text-center">Trusted Tyre Shop · Nalunnakkal, Kottayam</p>
+        <p class="text-gray-600 text-sm">© 2026 Kiruba Tyres</p>
+    </div>
+</footer>
+
+</body>
+</html>
